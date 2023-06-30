@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <a href="/new">Add message</a>
+
+    <% messages.forEach(function(message){ %>
+    <div>
+      <h2><%= message.user %></h2>
+      <p><%= message.text %></p>
+      <p><%= message.added.toISOString().slice(0,10) %></p>
+    </div>
+    <% }) %>
+  </body>
+</html>

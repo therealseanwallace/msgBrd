@@ -1,0 +1,17 @@
+{
+  "name": "msgbrd",
+  "version": "0.0.0",
+  "description": "A mini messageboard made to practice Express",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
